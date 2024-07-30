@@ -1,0 +1,171 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif; /* Fonte mais próxima ao design */
+  line-height: 1.6;
+}
+
+.fa {
+  margin-right: 5px; /* Espaçamento entre ícones */
+}
+
+.custom-navbar {
+  background-color: #012777;
+  height: 100px; /* Ajuste a altura conforme necessário */
+  position: relative;
+}
+
+.custom-navbar .navbar-brand img.navbar-logo {
+  height: 150px; /* Ajuste a altura conforme necessário */
+  max-height: 100%;
+}
+
+.custom-navbar .navbar-nav {
+  margin-left: 20px; /* Centraliza os itens do menu */
+}
+
+.custom-navbar .nav-link:hover {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 2px;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse.collapsing,
+  .navbar-collapse.show {
+    background-color: #000; /* Fundo escuro para a navbar colapsada */
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ccc; /* Cor clara para itens da navbar colapsada */
+  }
+
+  .navbar-dark .navbar-toggler {
+    border-color: #ccc; /* Cor da borda do botão hamburger */
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    color: white; /* Assegura que os links sejam brancos em fundo escuro */
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-navbar .nav-link,
+  .custom-navbar .navbar-brand {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .custom-navbar .navbar-brand img.navbar-logo {
+    height: 80px; /* Reduzir o tamanho do logo em telas menores */
+  }
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-navbar .navbar-nav {
+    margin-left: 0;
+  }
+}
+
+/* Para tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .navbar-brand img {
+    height: 60px;
+  }
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 576px) {
+  .navbar-nav {
+    font-size: 12px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-title {
+  text-align: left;
+  margin-top: 20px; /* Aumenta a margem superior */
+  margin-left: 100px; /* Aumenta a margem esquerda para mover para a direita */
+  font-size: 30px;
+}
+
+.page-title2 {
+  margin-top: -45px;
+  margin-bottom: 20px;
+  margin-left: 120px;
+  font-size: 30px;
+}
+
+.process-info {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px; /* Mantém a fonte menor para caber mais texto */
+  background-color: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 20px; /* Ajuste conforme necessário */
+  width: 70%; /* Ajusta a largura para ser menor */
+  height: 550px; /* Aumenta a altura */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura/altura */
+  text-align: justify;
+}
+
+.providencias li button {
+  width: 100%; /* Faz o botão ocupar toda a largura disponível */
+  padding: 12px 20px; /* Aumenta o padding para fazer o botão maior */
+  font-size: 16px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+  margin-bottom: 10px; /* Assegura um espaço entre os botões */
+  background-color: #0047ab; /* Cor azul conforme o design */
+  color: white; /* Texto branco para contraste */
+  border: none; /* Remove qualquer borda padrão */
+}
+
+.next-button {
+  padding: 10px 20px; /* Ajuste de padding para maior área de clique */
+  display: flex;
+  position: absolute; /* Posicionamento absoluto */
+  bottom: 30px; /* Espaço do fundo do contêiner */
+  right: 70px; /* Espaço da direita do contêiner */
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Ajuste na responsividade para manter tudo alinhado e visível */
+@media (max-width: 768px) {
+  .providencias li button,
+  .next-button .btn-orange {
+    width: 100%; /* Garante que os botões ajustem-se ao novo layout de tela */
+  }
+
+  .next-button {
+    position: static; /* Remove o posicionamento absoluto em telas menores */
+    margin-top: 20px; /* Espaço extra acima do botão 'Próximo' */
+  }
+}
+
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column; /* Empilha as colunas verticalmente em telas menores */
+    .col-md-8,
+    .col-md-4 {
+      width: 100%; /* Faz as colunas ocuparem toda a largura em dispositivos móveis */
+    }
+  }
+}
+
+.nav-link.active {
+  color: #ff0000; /* Muda a cor para vermelho, ou qualquer cor que destaque */
+  font-weight: bold; /* Opcionalmente, torna o texto em negrito */
+}

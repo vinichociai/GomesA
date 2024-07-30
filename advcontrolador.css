@@ -1,0 +1,152 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif; /* Fonte mais próxima ao design */
+}
+
+.fa {
+  margin-right: 5px; /* Espaçamento entre ícones */
+}
+.custom-navbar {
+  background-color: #012777;
+  height: 100px; /* Ajuste a altura conforme necessário */
+  position: relative;
+}
+
+.custom-navbar .navbar-brand img.navbar-logo {
+  height: 150px; /* Ajuste a altura conforme necessário */
+  max-height: 100%;
+}
+
+.custom-navbar .navbar-nav {
+  margin-left: 20px; /* Centraliza os itens do menu */
+}
+
+.custom-navbar .nav-link:hover {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 2px;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse.collapsing,
+  .navbar-collapse.show {
+    background-color: #000; /* Fundo escuro para a navbar colapsada */
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ccc; /* Cor clara para itens da navbar colapsada */
+  }
+
+  .navbar-dark .navbar-toggler {
+    border-color: #ccc; /* Cor da borda do botão hamburger */
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    color: white; /* Assegura que os links sejam brancos em fundo escuro */
+  }
+}
+
+/* Estilização das colunas conforme o print */
+.col-md-4 {
+  border: 1px solid #000; /* Bordas conforme o print */
+  padding: 20px; /* Espaçamento interno */
+  margin: 10px 0; /* Margem entre as colunas */
+}
+
+@media (max-width: 768px) {
+  .custom-navbar .nav-link,
+  .custom-navbar .navbar-brand {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .custom-navbar .navbar-brand img.navbar-logo {
+    height: 80px; /* Reduzir o tamanho do logo em telas menores */
+  }
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-navbar .navbar-nav {
+    margin-left: 0;
+  }
+}
+
+/* Para tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .navbar-brand img {
+    height: 60px;
+  }
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 576px) {
+  .navbar-nav {
+    font-size: 12px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-link.active {
+  color: #ff0000; /* Muda a cor para vermelho, ou qualquer cor que destaque */
+  font-weight: bold; /* Opcionalmente, torna o texto em negrito */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000; /* Cor azul para título */
+}
+
+.divergencias-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os botões verticalmente */
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #0047ab; /* Azul escuro para os botões */
+  color: white;
+  border: none;
+  width: 90%; /* Largura dos botões */
+  margin-bottom: 10px; /* Espaço entre os botões */
+}
+
+.btn-orange {
+  background-color: orange; /* Botão laranja para 'Próximo' */
+  color: rgb(0, 0, 0);
+  width: 90%; /* Largura do botão Próximo */
+  padding: 10px 0;
+  border: none;
+}
+
+.next-button {
+  padding: 7px 33px; /* Ajuste de padding para maior área de clique */
+  display: flex;
+  position: absolute; /* Posicionamento absoluto */
+  bottom: 30px; /* Espaço do fundo do contêiner */
+  right: 70px; /* Espaço da direita do contêiner */
+  background-color: orange;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.col-md-4 {
+  padding: 10px;
+  margin: 100px;
+  margin-top: 150px;
+  border: none;
+}

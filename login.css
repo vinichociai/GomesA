@@ -1,0 +1,236 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif; /* Fonte mais próxima ao design */
+}
+
+.custom-navbar {
+  background-color: #012777;
+  height: 100px; /* Ajuste a altura conforme necessário */
+  position: relative;
+}
+
+.custom-navbar .navbar-brand img.navbar-logo {
+  height: 150px; /* Ajuste a altura conforme necessário */
+  max-height: 100%;
+}
+
+.custom-navbar .navbar-nav {
+  margin-left: 20px; /* Centraliza os itens do menu */
+}
+
+.custom-navbar .nav-link:hover {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 2px;
+}
+
+.card {
+  border: none; /* Remover a borda padrão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar sombra suave */
+}
+
+.card-body {
+  background-color: #ffbebe;
+  padding: 1rem;
+}
+
+.card-verde {
+  background-color: #c5ffb0;
+  padding: 1rem;
+}
+
+.card-amarelo {
+  background-color: #f9fec8;
+  padding: 1rem;
+}
+
+.text-danger {
+  color: #e74c3c;
+}
+
+.text-success {
+  color: #2ecc71;
+}
+
+.text-warning {
+  color: #f39c12;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #004085, transparent);
+  margin: 1rem 0;
+}
+
+.list-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-outline-secondary {
+  border-color: #515354; /* Cor da borda azul */
+  color: #000000; /* Cor do texto azul */
+}
+
+.btn-outline-secondary:hover {
+  background-color: #515354; /* Fundo azul no hover */
+  color: white;
+}
+
+.d-flex.align-items-center .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+.h5.text-danger {
+  margin-bottom: 15px; /* Ajuste este valor conforme necessário */
+  margin-top: 0; /* Remover margem superior */
+}
+
+.row.mb-3.align-items-center {
+  display: flex;
+  align-items: center;
+  height: 70px; /* Ajuste conforme necessário para alinhar os elementos verticalmente */
+}
+
+.row.mb-3.align-items-center .col-md-8 {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bi-person-fill {
+  width: 24px; /* Aumenta a largura do ícone */
+  height: 24px; /* Aumenta a altura do ícone */
+}
+
+.lupa {
+  width: 24px; /* Aumenta a largura do ícone */
+  height: 24px; /* Aumenta a altura do ícone */
+}
+
+.advogados {
+  border: 1px solid black;
+  padding: 10px; /* Ajuste o padding conforme necessário */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  display: flex; /* Usa Flexbox para alinhar o conteúdo */
+  flex-direction: column; /* Orientação da coluna para alinhar verticalmente */
+  justify-content: center; /* Centraliza verticalmente o conteúdo dentro da div */
+  padding-top: 5px;
+}
+
+.advogados-title {
+    padding: 10px; /* Ajuste o padding conforme necessário */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex; /* Usa Flexbox para alinhar o conteúdo */
+    flex-direction: column; /* Orientação da coluna para alinhar verticalmente */
+    justify-content: center; /* Centraliza verticalmente o conteúdo dentro da div */
+    margin-top: -455px;
+    padding-bottom: 5px;
+  }
+
+  .advogados .list-group {
+    margin-top: -420px; /* Ajuste este valor conforme necessário para subir a lista */
+  }
+  
+  .advogados h5 {
+    margin-bottom: 0px; /* Reduz ou remove a margem inferior do título */
+  }
+  
+
+@media (max-width: 768px) {
+  .custom-navbar .nav-link,
+  .custom-navbar .navbar-brand {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .custom-navbar .navbar-brand img.navbar-logo {
+    height: 80px; /* Reduzir o tamanho do logo em telas menores */
+  }
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-navbar .navbar-nav {
+    margin-left: 0;
+  }
+}
+
+/* Para tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .navbar-brand img {
+    height: 60px;
+  }
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 576px) {
+  .navbar-nav {
+    font-size: 12px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advogados {
+    margin-bottom: 20px; /* Adiciona espaço em dispositivos móveis */
+  }
+}
+
+@media (max-width: 768px) {
+  .advogados-title {
+    font-size: 18px; /* Reduz o tamanho da fonte em dispositivos menores */
+  }
+}
+
+@media (max-width: 767px) {
+  .advogados .list-group {
+    margin-top: -10px; /* margem reduzida para não sobrepor conteúdos em telas pequenas */
+  }
+  .advogados {
+    padding: 10px; /* aumenta o padding para maior legibilidade em dispositivos móveis */
+  }
+  .advogados h5 {
+    margin-bottom: 5px; /* adiciona um pouco de espaço abaixo do título para separar visualmente */
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse.collapsing,
+  .navbar-collapse.show {
+    background-color: #000; /* Fundo escuro para a navbar colapsada */
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ccc; /* Cor clara para itens da navbar colapsada */
+  }
+
+  .navbar-dark .navbar-toggler {
+    border-color: #ccc; /* Cor da borda do botão hamburger */
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    color: white; /* Assegura que os links sejam brancos em fundo escuro */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Garante que os itens estejam em coluna no modo responsivo */
+  }
+}
